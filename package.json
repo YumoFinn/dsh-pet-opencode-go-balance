@@ -1,0 +1,54 @@
+{
+  "name": "dsh-pet-opencode-go-balance",
+  "version": "0.1.0",
+  "description": "把 OpenCode Go 的 5h/周/月三窗口用量接进 dsh-pet 的余额气泡：以 provider id `dsh-opencode-go` 注册到 dsh-pet 的第三方余额表。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "assets/icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QLY-3315/dsh-pet-opencode-go-balance.git"
+  },
+  "homepage": "https://github.com/QLY-3315/dsh-pet-opencode-go-balance#readme",
+  "bugs": {
+    "url": "https://github.com/QLY-3315/dsh-pet-opencode-go-balance/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-pet",
+    "opencode-go",
+    "balance",
+    "usage",
+    "cordis"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.3": "compatible"
+      }
+    }
+  }
+}
