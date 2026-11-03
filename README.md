@@ -36,17 +36,18 @@
 
 ## 安装
 
-在 DSH 的 **设置 → 插件 → 安装** 里输入包名或仓库地址：
+> 本插件目前**只发布在 GitHub，尚未发布到 npm**，所以请用仓库地址安装。
+
+在 DSH 的 **设置 → 插件 → 安装** 里粘贴：
 
 ```
-dsh-pet-opencode-go-balance
 https://github.com/QLY-3315/dsh-pet-opencode-go-balance
 ```
 
 或用 CLI：
 
 ```powershell
-dsh plugin --profile desktop add dsh-pet-opencode-go-balance
+dsh plugin --profile desktop add "https://github.com/QLY-3315/dsh-pet-opencode-go-balance"
 # 或者从本地目录
 dsh plugin --profile desktop add "E:\path\to\dsh-pet-opencode-go-balance"
 ```
